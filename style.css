@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(233, 239, 251);
+}
+
+.top-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.pexels.com/photos/5052880/pexels-photo-5052880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.top-container h1 {
+  text-align: center;
+}
+
+.logo {
+  height: 70px;
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgb(78, 76, 76);
+}
+
+.top-container h1 {
+  color: white;
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 2px;
+}
+
+.text {
+  margin: 50px 5%;
+  font-family: sans-serif;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  background-color: rgb(228, 228, 228);
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 1px 20px rgba(225, 101, 101, 0.3);
+  transition: background-color 0.4s;
+  padding: 10px 25px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  margin: 0 40px;
+  color: black;
+  font-family: cursive;
+}
+
+.navbar ul li a:hover {
+  color: red;
+}
+
+.navbar.active {
+  background-color: rgba(0, 0, 0, 0.805);
+}
+
+.navbar.active ul li a {
+  color: white;
+}
